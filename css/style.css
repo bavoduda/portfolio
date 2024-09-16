@@ -339,7 +339,11 @@ footer{
     box-shadow: 0 0 0.3rem var(--main-color);
 
  }
+ /* Oculta a seção 'more' por padrão */
 
+ .more {
+    display: none;
+ }
 
 /* === Botão e continuar lendo=== */
 

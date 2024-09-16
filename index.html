@@ -197,8 +197,7 @@
                 <div class="portfolio-layer">
                     <h4>Web Desenvolvedor</h4>
                     <p>Lorem ipsum dolor sit amet consectetur
-                         adipisicing elit. Laborum earum cupiditate dolorum aliquid, nobis commodi totam reprehenderit fu
-                         git eveniet officia vero! Ut necessitatibus facere quam voluptate doloribus accusamus soluta sequi!
+                    
                         
                         </p>
                     <a href="#"><i class='bx bx-link-external'></i></a>
@@ -228,25 +227,35 @@
    <!--/ Portifolio section -->
 
    <!-- Contato -->
-    <section class="contact" id="contact">
-        <h2>Entre em <span>Contato</span></h2>
-        <form action="">
-            <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="E-mail">
-            </div>
+   <section class="contact" id="contact">
+    <h2>Entre em <span>Contato</span></h2>
+    <form id="contact-form">
+        <div class="input-box">
+            <input type="text" placeholder="Nome Completo" required>
+            <input type="email" placeholder="E-mail" required>
+        </div>
 
-            <div class="input-box">
-                <input type="number" placeholder="Phone Number">
-                <input type="tex" placeholder="subject">
-            </div>
-            
-            <textarea cols="30" rows="8" placeholder="Mensagem"></textarea>
+        <div class="input-box">
+            <input type="number" placeholder="Número de Telefone (opcional)">
+            <input type="text" placeholder="Assunto" >
+        </div>
+        
+        <textarea cols="30" rows="8" placeholder="Mensagem" required></textarea>
 
-            <a href="#" class="btn"> Enviar Mensagem</a>
-        </form>
+        <button type="submit" class="btn">Enviar Mensagem</button>
+    </form>
 
-    </section>
+<script>
+    // Função para simular o envio do formulário
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevenir o comportamento padrão do formulário
+
+        // Limpar o formulário
+        document.getElementById('contact-form').reset();
+    });
+
+</script>
+
    <!-- /Contato -->
 
    <!-- about section -->
@@ -265,7 +274,7 @@
                      onde estou ampliando meus conhecimentos e habilidades na área de tecnologia.</p>
                 <div class="more">
                         
-                    <!-- continuar lendo -->
+                    <!-- continuação do texto -->
                     <p>Iniciei minha trajetória profissional como Jovem Aprendiz na empresa Santa Cruz, onde adquiri experiência prática valiosa e aprendi a importância de trabalhar em equipe e enfrentar 
                         desafios do dia a dia no ambiente corporativo. Esta experiência foi fundamental para meu desenvolvimento pessoal e profissional.
 

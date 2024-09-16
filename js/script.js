@@ -1,4 +1,3 @@
-
 // menu hamgurguer
 
 const menuHamburguer = document.querySelector('.menu-hamburguer')
@@ -24,7 +23,8 @@ function toggleMenu(){
 function toggleReadMore() {
     var moreContent = document.querySelector('.more');
     var btn = document.querySelector('.ler');
-    if (moreContent.style.display === "none") {
+
+    if (moreContent.style.display === "none" || moreContent.style.display === "") {
         moreContent.style.display = "block";
         btn.textContent = "Ler Menos";
     } else {
